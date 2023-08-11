@@ -1,0 +1,10 @@
+^C:\USERS\ALDOR\SOURCE\REPOS\HELLO-THERE-CMAKE\BUILD\CMAKEFILES\5D99D50E215FA940B7EECC81AA85FC3B\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/aldor/source/repos/hello-there-cmake -BC:/Users/aldor/source/repos/hello-there-cmake/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/aldor/source/repos/hello-there-cmake/build/HelloWorld.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
